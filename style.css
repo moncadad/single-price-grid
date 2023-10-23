@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* Layout  Mobile: 375px Desktop: 1440px */
+
+/* ## Colors Primary */
+
+:root {
+  ---Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /* ### Neutral */
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+
+  /* ## Typography */
+
+  /* ### Body Copy */
+  --font-body: 16px;
+  --font-karla: "Karla", sans-serif;
+  /* - Weights: 400, 700 */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+h2 {
+  font-size: 1.2rem;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-Gray);
+  font-family: var(--font-karla);
+  font-size: var(--font-body);
+}
+.wrapper {
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 650px;
+  margin: 4rem 1.9rem;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding-block: 2rem;
+  /* max-width: 90%; */
+}
+.row {
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.join {
+  background-color: #ffffff;
+  color: var(--Grayish-Blue);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.join h1 {
+  color: var(---Cyan);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.join h2 {
+  color: var(--Bright-Yellow);
+}
+
+.membership {
+  background: var(---Cyan);
+  color: var(--Light-Gray);
+  border-radius: 0 0 0 0;
+}
+.membership h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.membership span {
+  color: hsla(203, 44%, 93%, 0.6);
+  font-size: 16px;
+}
+
+.membership button {
+  background: var(--Bright-Yellow);
+  color: var(--Light-Gray);
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 1.2rem 0;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.why-us {
+  background: hsl(179, 51%, 56%);
+  color: hsla(203, 44%, 93%, 0.8);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.why-us h2 {
+  color: var(--Light-Gray);
+  padding-bottom: 1rem;
+}
+
+.why-us ul li {
+  line-height: 1.2;
+}
+@media (min-width: 750px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1rem;
+  }
+  .join {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .join .row {
+    max-width: 89%;
+  }
+  .membership {
+    border-radius: 0 0 0 0.5rem;
+  }
+  .why-us {
+    border-radius: 0 0 0.5rem 0;
+  }
+}
