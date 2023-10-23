@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://glistening-gnome-af772f.netlify.app/)
+- Live Site URL: [Live Website](https://glistening-gnome-af772f.netlify.app/)
 
 ## My process
 
